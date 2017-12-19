@@ -2,7 +2,7 @@
 
 通过应用市场更新 app（也就是打开指定包名的详情页面）。
 
-<img src="https://raw.githubusercontent.com/nukc/appmarketupdater/master/art/dialog.gif">
+<img src="https://raw.githubusercontent.com/nukc/AppMarketUpdater/master/art/dialog.jpg">
 
 ```groovy
     implementation 'com.github.nukc.appmarketupdater:updater:0.0.2'
@@ -12,7 +12,10 @@
 
 ## 用法
 
+[Sample](https://github.com/nukc/AppMarketUpdater/blob/master/app/src/main/java/com/github/nukc/appmarketupdater/sample/MainActivity.kt)
+
 ```java
+
     AppMarketUpdater.show(context, packageName);
 ```
 
@@ -164,7 +167,34 @@ android.intent.action.MAIN（把 android.intent.category.APP_MARKET 放在了一
 ```
 
 没有 action 是没有问题的，但是无法匹配到。
+
 If the filter does not list any actions, there is nothing for an intent to match, so all intents fail the test.
 However, if an Intent does not specify an action, it passes the test as long as the filter contains at least one action
-还是直接看文档吧[intents-filters.html#ActionTest](https://developer.android.com/guide/components/intents-filters.html#ActionTest)
+
+还是直接看文档吧 [intents-filters.html#ActionTest](https://developer.android.com/guide/components/intents-filters.html#ActionTest)
 如果是开发应用市场的同学看到了，可以注意一下。
+
+
+## License
+
+    The MIT License (MIT)
+
+    Copyright (c) 2017 Nukc
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
