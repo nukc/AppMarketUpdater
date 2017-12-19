@@ -4,6 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/nukc/AppMarketUpdater/master/art/dialog.jpg">
 
+依赖其中一个即可：
 ```groovy
     implementation 'com.github.nukc.appmarketupdater:updater:0.0.2'
     implementation 'com.github.nukc.appmarketupdater:updater-rxjava2:0.0.2'
@@ -32,7 +33,7 @@
     }
 ```
 
-但是通过这个方法是不能匹配到手机上所有的应用市场，为什么呢？来看下面这几个 activity 清单信息：
+通过这个方法是不能匹配到手机上所有的应用市场，为什么呢？来看下面这几个 activity 清单信息：
 
 这个是可以匹配到的。
 ```xml
@@ -148,7 +149,7 @@ android.intent.action.MAIN（把 android.intent.category.APP_MARKET 放在了一
 ```
 
 新版，不能匹配到：
-```
+```xml
         <activity
             android:theme="@ref/0x7f0b005c"
             android:name="com.xx.LauncherActivity"

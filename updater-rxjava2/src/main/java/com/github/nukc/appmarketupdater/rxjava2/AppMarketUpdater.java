@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.github.nukc.appmarketupdater.common.AppMarket;
@@ -35,7 +36,7 @@ public class AppMarketUpdater {
      * @param appPkgName 需要更新的 app 包名
      * @return Disposable
      */
-    public static Disposable show(final Context context, final String appPkgName) {
+    public static Disposable show(@NonNull final Context context, @NonNull final String appPkgName) {
         return getAppMarkets(context)
                 .toList()
                 .observeOn(AndroidSchedulers.mainThread())

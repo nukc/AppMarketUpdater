@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.github.nukc.appmarketupdater.common.AppMarket;
@@ -30,7 +31,7 @@ public class AppMarketUpdater {
      * @param context    Context
      * @param appPkgName 需要更新的 app 包名
      */
-    public static AsyncTask show(final Context context, final String appPkgName) {
+    public static AsyncTask show(@NonNull Context context, @NonNull String appPkgName) {
         return new GetAppMarketsTask(context, appPkgName).execute();
     }
 
