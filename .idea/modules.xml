@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AppMarketUpdater.iml" filepath="$PROJECT_DIR$/AppMarketUpdater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updater/updater.iml" filepath="$PROJECT_DIR$/updater/updater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updater-common/updater-common.iml" filepath="$PROJECT_DIR$/updater-common/updater-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updater-kotlin/updater-kotlin.iml" filepath="$PROJECT_DIR$/updater-kotlin/updater-kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updater-rxjava2/updater-rxjava2.iml" filepath="$PROJECT_DIR$/updater-rxjava2/updater-rxjava2.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,1 @@
+include ':app', ':updater-rxjava2', ':updater-common', ':updater', ':updater-kotlin'
